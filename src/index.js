@@ -4,5 +4,16 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
+const Root = ()=>{
+  return(
+    <Provider store={store}>
+      <App/>
+    </Provider>
+  )
+}
+
+ReactDOM.render( <Root/>, document.getElementById('root'));
 registerServiceWorker();
