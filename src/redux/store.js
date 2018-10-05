@@ -1,12 +1,9 @@
-import {createStore, combineReducers} from "redux"
-import layoutReducer from "./reducers/layoutReducer"
-import settingsReducer from "./reducers/settingsReducer"
+import {createStore} from "redux"
+import {rootReducers} from "./reducers/combineReducers"
+
 const  store = () => (
    createStore(
-    combineReducers({
-      layoutReducer,
-      settingsReducer,
-    }),
+     rootReducers,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 )

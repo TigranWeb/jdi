@@ -6,13 +6,13 @@ class MainPage extends Component {
   render() {
     return (
       <div className="jdi">
-        <div className="jdi_header jdi_section">header</div>
-        <div className="jdi_main-wrapper">
-          <div className="jdi_main jdi_section">main</div>
-          <div className="jdi_left-sidebar jdi_section">left sidebar</div>
-          <div className="jdi_right-sidebar jdi_section">right sidebar</div>
+        <div className="jdi_header jdi_area">header</div>
+        <div className="jdi_main-wrapper jdi_area">
+          <div className="jdi_main jdi_area">main</div>
+          <div className="jdi_left-sidebar jdi_area">left sidebar</div>
+          <div className="jdi_right-sidebar jdi_area">right sidebar</div>
         </div>
-        <div className="jdi_footer jdi_section">footer</div>
+        <div className="jdi_footer jdi_area">footer</div>
       </div>
     )
   }
