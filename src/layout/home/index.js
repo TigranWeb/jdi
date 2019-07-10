@@ -16,7 +16,8 @@ class Home extends Component {
             <NavLink to={"/auto"}>Login / Reg </NavLink>
           </li>
         </nav>
-        Home
+
+        <h1>Home</h1>
       </div>
     )
   }

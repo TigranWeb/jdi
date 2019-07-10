@@ -37,7 +37,7 @@ class Login extends Component {
           type="submit"
           className="jdi_login_button"
           to="/main"
-          // onClick={this.clickLogin}
+          onClick={this.clickLogin}
         >
           LOGIN
         </Link>

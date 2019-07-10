@@ -13,7 +13,7 @@ class App extends Component {
       <div style={this.props.colors} className={"jdi_app_root"}>
         <Router>
           <Switch>
-            <Route path={"/"} exact component={Home}/>
+            <Route path={"/"} exact={true} component={Home}/>
             <Route path={"/auto"} component={Auto}/>
             <Route path={"/main"} component={MainPage}/>
             <Route component={NotFound}/>
