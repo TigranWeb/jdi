@@ -10,19 +10,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // typescript loader
-      
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
-        ],
-      },
       {
         enforce: "pre",
         test: /\.js$/,

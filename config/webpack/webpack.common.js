@@ -11,16 +11,25 @@ module.exports = {
   },
   module: {
     rules: [
+      // setup for TYPESCRIPT
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         loader: "awesome-typescript-loader"
       },
-
+      // setup loader for CSS
       {
-        test: /\.jsx$/,
-        loader: "babel-loader",
-        options: { presets: ["es2015"] }
+        test: /\.css$/,
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
+      },
+      // setup loader for SCSS
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader", // creates style nodes from JS strings
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+        ]
       }
     ]
   },
